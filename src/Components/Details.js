@@ -7,7 +7,9 @@ function Details() {
   const yellowStart = "images/star.png";
   return (
     <Container>
-      <Heading>Waterfall Knitted Cardigan</Heading>
+      <Heading>
+        <h3>Waterfall Knitted Cardigan</h3>
+      </Heading>
       <Stars>
         <Image src={fullStart} />
         <Image src={fullStart} />
@@ -73,11 +75,16 @@ export default Details;
 const Container = styled.div`
   grid-area: main;
 `;
-const Heading = styled.h3`
-  font-family: "Segoe UI";
-  font-weight: 400;
+const Heading = styled.div`
+ h3{
   font-size: 28px;
   margin-bottom: 1px;
+ }
+  @media (max-width: 768px) {
+    h3{
+      display: none;
+    }
+  }
 `;
 const Stars = styled.div`
   display: flex;
@@ -93,16 +100,13 @@ const Image = styled.img`
 `;
 const Price = styled.h3`
   h3 {
-    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 25px;
     color: #262626;
   }
   p {
-    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
     color: #707070;
   }
   border-bottom: 1px solid #bbbbbb;
@@ -191,7 +195,7 @@ const Quality = styled.div`
     background: #47afff;
     outline: none;
     border: none;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 4px;
     color: #fff;
   }
@@ -210,11 +214,6 @@ const Zipcode = styled.div`
     justify-content: center;
   }
   p {
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
     color: #707070;
   }
   p:nth-of-type(2n) {
@@ -228,7 +227,6 @@ const Zipcode = styled.div`
     color: #fff;
     outline: none;
     border: none;
-    margin-top: 3px;
     border-radius: 4px;
   }
 `;
@@ -240,9 +238,6 @@ const Functions = styled.div`
     display: flex;
     flex-direction: column;
     p {
-      font-family: "Segoe UI";
-      font-weight: 400;
-      font-size: 16px;
       color: #3a3a3a;
     }
     p:nth-of-type(3n) {
@@ -252,10 +247,7 @@ const Functions = styled.div`
   }
   .oppo {
     p {
-      font-family: "Segoe UI";
-      font-style: normal;
       font-weight: 600;
-      font-size: 16px;
       color: #1d6ebe;
       text-decoration-line: underline;
     }

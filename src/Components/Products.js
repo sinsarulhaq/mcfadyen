@@ -39,6 +39,11 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-around;
+margin: 10px;
+@media (max-width: 768px) {
+    overflow-x: scroll;
+
+  }
 `
 const Image = styled.img`
 

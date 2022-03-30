@@ -5,8 +5,10 @@ function Card() {
   return (
     <Container>
       <File>
-        Home {">"} Category {">"} Sub {">"} Category {">"} Product
+        <p>Home {">"} Category {">"} Sub {">"} Category {">"} Product</p>
+        <h3>Product Name</h3>
       </File>
+      
       <ImageSections>
         <VerticalImages>
           <FirstImage />
@@ -24,12 +26,26 @@ export default Card;
 const Container = styled.div`
   grid-area: leftside;
 `;
-const File = styled.span`
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 400;
+const File = styled.div`
+h3{
+display: none;
+font-weight: 600;
+font-size: 36px;
+color: #707070;
+}
+p{
   font-size: 12px;
   color: #b8b8b8;
+}
+  @media (max-width: 768px) {
+    p{
+      display: none;
+    }
+    h3{
+      display: block;
+    }
+  }
+  
 `;
 const ImageSections = styled.div`
   padding-top: 30px;
@@ -41,6 +57,9 @@ const VerticalImages = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const FirstImage = styled.div`
   width: 50px;

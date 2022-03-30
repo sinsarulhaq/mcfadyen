@@ -16,6 +16,7 @@ function Product({image, title, price}) {
 
 export default Product
 const Card = styled.div`
+margin: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;

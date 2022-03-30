@@ -50,6 +50,9 @@ const TextFields = styled.div`
     border-radius: 4px;
     outline: none;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Search = styled.div`
   background-color: #000;
