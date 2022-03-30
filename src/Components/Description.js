@@ -13,9 +13,18 @@ function Description() {
           store "Nlife LLC", you will find more what you want!Note: Please refer
           to our size image chart before order. That’s the size for this item.
         </p>
-        <li>Lightweight knit blended fabric, nice wear resistance and wrinkle resistance, last longer without pilling.</li>
-        <li>Waterfall neck, long sleeve, solid color, open front, casual style for everyday comfort.</li>
-        <li>Fits for daily wear, school, vacation, work. Easy to pair with jeans, skinny leggings, boots in spring, autumn fall and winter.</li>
+        <li>
+          Lightweight knit blended fabric, nice wear resistance and wrinkle
+          resistance, last longer without pilling.
+        </li>
+        <li>
+          Waterfall neck, long sleeve, solid color, open front, casual style for
+          everyday comfort.
+        </li>
+        <li>
+          Fits for daily wear, school, vacation, work. Easy to pair with jeans,
+          skinny leggings, boots in spring, autumn fall and winter.
+        </li>
       </Hero>
     </Container>
   );
@@ -29,23 +38,24 @@ const Container = styled.div`
 `;
 
 const Hero = styled.div`
-h3{
-font-weight: 400;
-font-size: 20px;
-color: #707070;
-}
-p{
+  h3 {
     font-weight: 400;
-font-size: 16px;
-color: #707070;
-line-height: 28px;
-word-spacing: 7px;
-}
-li{
+    font-size: 20px;
+    color: #707070;
+  }
+  p {
     font-weight: 400;
-font-size: 16px;
-color: #707070;
-line-height: 28px;
-word-spacing: 7px; 
-}
-`
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+    word-spacing: 7px;
+  }
+  li {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+    word-spacing: 7px;
+  }
+`;

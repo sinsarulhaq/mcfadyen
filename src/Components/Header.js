@@ -25,6 +25,7 @@ export default Header;
 const Container = styled.div`
   line-height: 1;
   background-color: #ffffff;
+  padding: 10px;
   height: 84px;
 `;
 const Content = styled.div`

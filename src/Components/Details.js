@@ -86,6 +86,10 @@ const Stars = styled.div`
 const Image = styled.img`
   width: 25px;
   height: 25px;
+  transition: transform .2s;
+  &:hover {
+  transform: scale(1.5);
+}
 `;
 const Price = styled.h3`
   h3 {
