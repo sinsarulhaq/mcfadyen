@@ -9,6 +9,7 @@ function Details() {
     <Container>
       <Heading>
         <h3>Waterfall Knitted Cardigan</h3>
+        <p>Product Id 2CDE283001R0100</p>
       </Heading>
       <Stars>
         <Image src={fullStart} />
@@ -76,13 +77,19 @@ const Container = styled.div`
   grid-area: main;
 `;
 const Heading = styled.div`
- h3{
-  font-size: 28px;
-  margin-bottom: 1px;
- }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 1px;
+  }
+  p {
+    display: none;
+  }
   @media (max-width: 768px) {
-    h3{
+    h3 {
       display: none;
+    }
+    p {
+      display: block;
     }
   }
 `;
@@ -93,10 +100,10 @@ const Stars = styled.div`
 const Image = styled.img`
   width: 25px;
   height: 25px;
-  transition: transform .2s;
+  transition: transform 0.2s;
   &:hover {
-  transform: scale(1.5);
-}
+    transform: scale(1.5);
+  }
 `;
 const Price = styled.h3`
   h3 {
@@ -113,7 +120,6 @@ const Price = styled.h3`
 `;
 const SelectionBox = styled.div`
   span {
-    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 14px;
     color: #707070;

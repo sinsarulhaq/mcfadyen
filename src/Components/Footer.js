@@ -59,7 +59,6 @@ const Rows = styled.div`
   }
 `;
 
-
 const Company = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,7 +73,7 @@ const Company = styled.div`
   }
 `;
 const Address = styled(Company)`
-padding-top: 20px;
+  padding-top: 20px;
   h2 {
     display: none;
   }
@@ -96,7 +95,6 @@ const NewsLetter = styled(Company)`
     outline: none;
     border-radius: 4px;
     padding: 5px;
-    
   }
   button {
     width: 90px;
@@ -127,7 +125,7 @@ const CopyRightSection = styled.div`
     font-weight: 400;
     font-size: 14px;
     @media (max-width: 768px) {
-      color: #6E6E6E;
-  }
+      color: #6e6e6e;
+    }
   }
 `;

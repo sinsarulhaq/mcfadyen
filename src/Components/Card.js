@@ -5,10 +5,12 @@ function Card() {
   return (
     <Container>
       <File>
-        <p>Home {">"} Category {">"} Sub {">"} Category {">"} Product</p>
+        <p>
+          Home {">"} Category {">"} Sub {">"} Category {">"} Product
+        </p>
         <h3>Product Name</h3>
       </File>
-      
+
       <ImageSections>
         <VerticalImages>
           <FirstImage />
@@ -27,25 +29,24 @@ const Container = styled.div`
   grid-area: leftside;
 `;
 const File = styled.div`
-h3{
-display: none;
-font-weight: 600;
-font-size: 36px;
-color: #707070;
-}
-p{
-  font-size: 12px;
-  color: #b8b8b8;
-}
+  h3 {
+    display: none;
+    font-weight: 600;
+    font-size: 36px;
+    color: #707070;
+  }
+  p {
+    font-size: 12px;
+    color: #b8b8b8;
+  }
   @media (max-width: 768px) {
-    p{
+    p {
       display: none;
     }
-    h3{
+    h3 {
       display: block;
     }
   }
-  
 `;
 const ImageSections = styled.div`
   padding-top: 30px;
