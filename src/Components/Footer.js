@@ -85,7 +85,6 @@ const Company = styled.div`
   padding: -6px;
   h3 {
     font-weight: 700;
-    font-size: 18px;
   }
   p {
     font-weight: 400;

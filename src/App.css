@@ -1,5 +1,13 @@
-body{
-    overflow-x: hidden;
-    font-family: 'Segoe UI';
-    margin: 0;
+body {
+  overflow-x: hidden;
+  font-family: "Segoe UI";
+  margin: 0;
+}
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
 }
